@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goweblocal
+  labels:
+    app: goweblocal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: goweblocal
+  template:
+    metadata:
+      labels:
+        app: goweblocal
+    spec:
+      containers:
+      - name: goweblocal
+        image: abbeydauda/goweblocal:v1
+        ports:
+        - containerPort: 8080
