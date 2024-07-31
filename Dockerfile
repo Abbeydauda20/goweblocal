@@ -31,6 +31,6 @@ COPY --from=base /app/static ./static
 # Expose port 8080 for the container
 EXPOSE 8080
 
-# Command to run the Go application another
+# Command to run the Go application
 CMD ["./main"]
 
