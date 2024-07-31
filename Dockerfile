@@ -28,7 +28,7 @@ COPY --from=base /app/main .
 # Copy the static files from the base stage
 COPY --from=base /app/static ./static
 
-# Expose port 8080
+# Expose port 8080 for the container
 EXPOSE 8080
 
 # Command to run the Go application another
