@@ -31,6 +31,6 @@ COPY --from=base /app/static ./static
 # Expose port 8080
 EXPOSE 8080
 
-# Command to run the Go application
+# Command to run the Go application on the 
 CMD ["./main"]
 
