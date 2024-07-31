@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: goweblocal
-        image: abbeydauda/goweblocal:{{ .Value.tag }}
+        image: abbeydauda/goweblocal:v1
         ports:
         - containerPort: 8080
